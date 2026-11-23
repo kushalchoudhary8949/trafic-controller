@@ -98,9 +98,39 @@ This approach ensures urgent requests are served quickly while normal traffic is
 
 ```
 .
-├── README.md                        # This file
-└── os case study report.pdf         # Full 22-page case study report
+├── README.md                        # Documentation & project overview
+├── os case study report.pdf         # Full 22-page case study report
+└── traffic-controller/              # Interactive Simulation Web Application
+    ├── src/
+    │   ├── components/              # UI components (Intersection Canvas, Gantt, Controls, etc.)
+    │   ├── scheduler/               # Scheduling implementations (FCFS, Priority, RR, Aging)
+    │   ├── simulation/              # Simulation engine, traffic generator & signal controller
+    │   ├── types/                   # TypeScript definitions
+    │   └── utils/                   # Metrics and calculation utilities
+    ├── index.html                   # HTML entry point
+    ├── package.json                 # Dependencies and npm scripts
+    ├── tsconfig.json                # TypeScript configuration
+    └── vite.config.ts               # Vite build configuration
 ```
+
+---
+
+## 🚀 Running the Simulator
+
+To run the interactive traffic simulation locally:
+
+```bash
+# Navigate to the traffic-controller directory
+cd traffic-controller
+
+# Install dependencies (if not already installed)
+npm install
+
+# Start the local development server
+npm run dev
+```
+
+Then open `http://localhost:3000/` (or `http://localhost:3001/`) in your browser to view the interactive simulation.
 
 ---
 
