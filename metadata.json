@@ -1,0 +1,6 @@
+{
+  "name": "Smart Traffic Signal Controller",
+  "description": "An Operating Systems-based intelligent traffic management simulator demonstrating FCFS, Priority, Round Robin, emergency interrupts, preemption, starvation, and aging.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
